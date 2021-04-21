@@ -1,27 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <style>
-        .avatar {
-            vertical-align: middle;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-    </style>
-
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-    </div>
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
-    </div>
-
     <div class="row" style="margin-top: 5rem;">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Laravel 8 CRUD</h2>
+                <h2>Laravel 8 CRUD- Clase APPSWBD 2021</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('hola.create') }}"> Create New Empleado</a>
