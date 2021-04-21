@@ -45,7 +45,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
+
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -64,6 +64,7 @@
                                         {{ __('Logout') }}
                                     </a>
 
+                                    <a class="dropdown-item" href="{{ route('hola.index') }}">Empleados</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
@@ -76,6 +77,17 @@
         </nav>
 
         <main class="py-4">
+            <div class="row">
+                <div class="col-lg-12 margin-tb">
+                    <div class="pull-left">
+                        <h2>@yield('texto')</h2>
+                    </div>
+                    <div class="pull-right">
+                        <a class="btn btn-primary" href="{{ route('hola.index') }}"> Back</a>
+                    </div>
+                </div>
+            </div>
+
             @yield('content')
         </main>
     </div>

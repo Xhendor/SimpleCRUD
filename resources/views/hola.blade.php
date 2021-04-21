@@ -17,6 +17,7 @@
             <th>Nombres</th>
             <th>Apellidos</th>
             <th>Edad</th>
+            <th>Acciones</th>
         </tr>
     @foreach ($data as $key => $value)
         <tr>

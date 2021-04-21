@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Empleado;
 use Illuminate\Http\Request;
 
-class HolaController extends Controller
+    class HolaController extends Controller
 {
 
     /**
@@ -26,11 +26,11 @@ class HolaController extends Controller
     public function index()
     {
 //Para obtener todos
-//        $data=Empleado::all();
+       $data=Empleado::all();
         //Para obtener todos con paginador
 //        $data=Empleado::all()->paginate(5);
         //Para obtener datos especficos
-        $data=Empleado::where('edad','>','22')->get();
+//        $data=Empleado::where('edad','>','22')->get();
         return view('hola',compact('data'));
     }
 
