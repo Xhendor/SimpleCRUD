@@ -1,5 +1,7 @@
 <?php
 use App\Http\Controllers\HolaController;
+use App\Http\Controllers\PersonaController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +31,4 @@ get('/home',
 //    [App\Http\Controllers\HolaController::class,
 //        'index'])->name('hola');
 Route::resource('hola', HolaController::class);
+Route::resource('persona', PersonaController::class);

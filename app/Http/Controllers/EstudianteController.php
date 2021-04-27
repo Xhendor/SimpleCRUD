@@ -2,16 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Persona;
+use App\Models\Estudiante;
 use Illuminate\Http\Request;
 
-class PersonaController extends Controller
+class EstudianteController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -19,9 +14,7 @@ class PersonaController extends Controller
      */
     public function index()
     {
-       $personas= Persona::all();
-
-       return  $personas;
+        //
     }
 
     /**
@@ -48,10 +41,10 @@ class PersonaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Persona  $persona
+     * @param  \App\Models\Estudiante  $estudiante
      * @return \Illuminate\Http\Response
      */
-    public function show(Persona $persona)
+    public function show(Estudiante $estudiante)
     {
         //
     }
@@ -59,10 +52,10 @@ class PersonaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Persona  $persona
+     * @param  \App\Models\Estudiante  $estudiante
      * @return \Illuminate\Http\Response
      */
-    public function edit(Persona $persona)
+    public function edit(Estudiante $estudiante)
     {
         //
     }
@@ -71,10 +64,10 @@ class PersonaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Persona  $persona
+     * @param  \App\Models\Estudiante  $estudiante
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Persona $persona)
+    public function update(Request $request, Estudiante $estudiante)
     {
         //
     }
@@ -82,10 +75,10 @@ class PersonaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Persona  $persona
+     * @param  \App\Models\Estudiante  $estudiante
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Persona $persona)
+    public function destroy(Estudiante $estudiante)
     {
         //
     }

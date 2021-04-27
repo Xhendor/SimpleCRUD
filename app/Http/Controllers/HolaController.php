@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Empleado;
+use App\Models\Estudiante;
 use App\Models\Persona;
 use Illuminate\Http\Request;
 
@@ -27,14 +28,13 @@ use Illuminate\Http\Request;
     public function index()
     {
 //Para obtener todos
-       $data=Empleado::all();
 
-       $coco=Persona::find(1);
-        //Para obtener todos con paginador
-//        $data=Empleado::all()->paginate(5);
-        //Para obtener datos especficos
-//        $data=Empleado::where('edad','>','22')->get();
-        return $coco->direccion;
+//        $personas= Persona::all();
+//
+//        return  $personas;
+
+        $estudiantes=Estudiante::all();
+        return $estudiantes;
     }
 
     /**
